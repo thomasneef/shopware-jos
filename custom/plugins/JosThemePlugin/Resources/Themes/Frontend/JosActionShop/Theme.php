@@ -120,7 +120,7 @@ class Theme extends \Shopware\Components\Theme
         'scrolltotop-size' => 50,
         'scrolltotop-fontsize' => 50,
         'scrolltotop-backgroundcolor' => '#212121',
-        'scrolltotop-backgroundcolorhover' => '#000',
+        /*'scrolltotop-backgroundcolorhover' => '#000',*/
         'scrolltotop-iconColor' => '#fff',
         'scrolltotop-iconColorHover' => '#fff'
     ];
@@ -348,7 +348,6 @@ class Theme extends \Shopware\Components\Theme
         $tab->addElement($fieldSet);
 
         $attributes = array_merge($this->fieldSetDefaults, ['height' => 260]);
-
         $fieldSet = $this->createFieldSet(
             'payment_icons_settings',
             '__payment_icons_settings__',
@@ -652,21 +651,6 @@ class Theme extends \Shopware\Components\Theme
         return $tab;
     }
 
-    /* BOF Create ScropTAB  createScrollTab  */
-
-
-
-    /* EOF Create ScropTAB  createScrollTab  */
-
-
-
-
-
-
-
-
-
-
     private function createLogoBrandTab()
     {
         $tab = $this->createTab(
@@ -800,9 +784,6 @@ class Theme extends \Shopware\Components\Theme
         $tabPanel->addTab($logoTab);
         $tabPanel->addTab($this->createPaymentShippingIcons());
         $tabPanel->addTab($this->createSocialMedia());
-        $tabPanel->addTab($this->createScrollTab());
-
-
 
         $tab->addElement($tabPanel);
 

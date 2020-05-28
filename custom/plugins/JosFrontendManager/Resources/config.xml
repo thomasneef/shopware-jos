@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="/engine/Shopware/Components/Plugin/schema/config.xsd">
+
+    <elements>
+        <element required="false" type="text" scope="shop">
+            <name>jos_default_apikey</name>
+            <label lang="de">Standard Api Key</label>
+            <label lang="en">Standard Api Key</label>
+            <value>ZuYkk%zzalr4917!ddbaer</value>
+            <description lang="de">Der zentrale Secure Key für den API Zugriff</description>
+        </element>
+
+    </elements>
+</config>

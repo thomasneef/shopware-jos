@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <!-- Event BackendSubscriber -->
+        <service id="jos_frontend_manager.subscribers.frontend_manager_subscriber" class="JosFrontendManager\Subscribers\FrontendManagerSubscriber">
+            <argument>%jos_frontend_manager.plugin_dir%</argument>
+            <argument type="service" id="template" />
+            <tag name="shopware.event_subscriber" />
+        </service>
+    </services>
+</container>

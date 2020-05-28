@@ -8,7 +8,7 @@
                 {* Top bar navigation *}
                 {block name="frontend_index_top_bar_nav"}
                     <nav class="top-bar--navigation" role="menubar">
-                        <div class="jos_topbarcol left">{s namespace='frontend/index/checkout_actions' name='TopbarSpalte1Text'}<i class="fal fa-truck fa-flip-horizontal"></i> Kostenloser Versand ab € 50,- Bestellwert{/s}</div>
+                        <div class="jos_topbarcol left">{s namespace='frontend/index/checkout_actions' name='TopbarSpalte1Text'}<i class="far fa-truck fa-flip-horizontal"></i> Kostenloser Versand ab € 50,- Bestellwert{/s}</div>
                         <div class="jos_topbarcol center">{s namespace='frontend/index/checkout_actions' name='TopbarSpalte2Text'}<i class="fal fa-clock"></i> Schnelle Lieferung auch während Corona{/s}</div>
                         <div class="jos_topbarcol center">{s namespace='frontend/index/checkout_actions' name='TopbarSpalte3Text'}<i class="fal fa-hand-point-right"></i> Kostenloser Rückversand{/s}</div>
                         <div class="jos_topbarcol right">{s namespace='frontend/index/checkout_actions' name='TopbarSpalte4Text'}<i class="far fa-comments"></i> Live Kundenchat{/s}</div>
