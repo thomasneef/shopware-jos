@@ -1,0 +1,45 @@
+{extends file="parent:frontend/checkout/shipping_payment.tpl"}
+{* Back to the shop button *}
+{* Shop header *}
+{block name='frontend_index_navigation'}
+    {$smarty.block.parent}
+    {if $theme.checkoutHeader}
+        {s name="FinishButtonBackToShop" namespace="frontend/checkout/finish" assign="snippetFinishButtonBackToShop"}{/s}
+        <a href="{url controller='index'}"
+           class="btn is--small btn--back-top-shop is--icon-left"
+           title="{$snippetFinishButtonBackToShop|escape}"
+           xmlns="http://www.w3.org/1999/html">
+            <i class="icon--arrow-left"></i>
+            {s name="FinishButtonBackToShop" namespace="frontend/checkout/finish"}{/s}
+        </a>
+    {else}
+        {include file="frontend/checkout/header.tpl"}
+    {/if}
+{/block}
+
+
+{block name='frontend_index_logo_trusted_shops'}
+{/block}
+
+
+{* Hide sidebar left *}
+{block name='frontend_index_content_left'}
+{/block}
+
+{* Hide breadcrumb *}
+{block name='frontend_index_breadcrumb'}{/block}
+
+{* Step box *}
+{block name='frontend_index_navigation_categories_top'}
+{/block}
+
+{* Footer *}
+{block name="frontend_index_footer"}
+{/block}
+
+{* Main content *}
+{block name="frontend_index_content"}
+    <div class="content content--confirm product--table" data-ajax-shipping-payment="true">
+        {include file="frontend/checkout/shipping_payment_core.tpl"}
+    </div>
+{/block}

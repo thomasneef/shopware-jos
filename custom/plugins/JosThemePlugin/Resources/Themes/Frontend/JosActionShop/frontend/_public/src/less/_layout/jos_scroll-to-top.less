@@ -1,0 +1,31 @@
+#jos-scrolltotop {
+    cursor: pointer;
+    position: fixed;
+    bottom:@scrollToTopEnabledBottom;
+    right: @scrollToTopEnabledRight;
+
+    z-index: 500;
+    background-color: @scrollToTopEnabledBgColor;
+    color:@scrollToTopEnabledIconColor;
+    width: @scrollToTopEnabledSize;
+    height:@scrollToTopEnabledSize;
+    line-height:@scrollToTopEnabledSize;
+    text-align: center;
+
+    .unitize(border-radius,50);
+    border: 1px solid #fff;
+  
+    &:hover {
+      background-color: @scrollToTopEnabledBgColorHover;
+      color:@scrollToTopEnabledIconColorHover;
+      border: 1px solid #fff;
+    }
+  
+    i {
+      font-size: @scrollToTopEnabledIconSize;
+
+      &:before{
+        content: "\e610";
+      }
+    }
+  }

@@ -1,0 +1,228 @@
+/*
+ *  Copyright (C) Thomas Neef | neefit.de - All Rights Reserved
+ * @author  Thomas Neef
+ * @Modul  Projects
+ * @Class  jos_compare.less
+ * @date  26.05.20, 18:21
+ */
+
+
+#mySidenav {
+ position: fixed;
+ top: 33vh;
+ right: -345px;
+ transition: 0.3s;
+ padding: 0;
+ width: 400px;
+ text-decoration: none;
+ font-size: 20px;
+ color: white;
+ border-radius: 0 ;
+ z-index: 2000;
+ background: transparent;
+}
+
+#mySidenav:hover {
+ right: 0;
+}
+
+#mySidenav .jos-compare {
+ display: block;
+ background: transparent;
+ color: white;
+}
+
+
+.jos-compare-grid{
+ display: -ms-flexbox;
+ display: -webkit-flex;
+ display: flex;
+ -webkit-flex-direction: row;
+ -ms-flex-direction: row;
+ flex-direction: row;
+ -webkit-flex-wrap: nowrap;
+ -ms-flex-wrap: nowrap;
+ flex-wrap: nowrap;
+ -webkit-justify-content: flex-start;
+ -ms-flex-pack: start;
+ justify-content: flex-start;
+ -webkit-align-content: flex-start;
+ -ms-flex-line-pack: start;
+ align-content: flex-start;
+ -webkit-align-items: flex-start;
+ -ms-flex-align: start;
+ align-items: flex-start;
+
+ .jos-compare-grid-left{
+  width: 55px;
+  height: 55px;
+  max-height: 55px;
+  min-width: 55px;
+  background: @brand-primary;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+
+    .jos-compare-grid-left-title{
+     display:inline-block;
+     position: absolute;
+     top: 24px;
+     left:0;
+     font-size: 10px;
+     padding: 1px 0 0 4px;
+     color: white;
+    }
+
+   .jos-compare-grid-left-icon-left{
+    font-size: 20px;
+    color: white;
+    padding: 5px 5px 0 5px;
+    background: @brand-primary;
+    }
+
+     .jos-compare-grid-left-preview{
+         padding: 0 0 3px 4px;
+       .jos-compare-grid-left-preview-count{
+                padding: 0;
+                height: 16px;
+                width: 16px;
+                min-width: 16px;
+                line-height: 16px;
+                font-size: 11px;
+                border-radius: 50px;
+                box-sizing: content-box;
+                white-space: nowrap;
+                z-index: 500;
+                font-weight: 500;
+                text-align: center;
+                border: 0 none !important;
+                background: white;
+                color: #212221;
+                display: inline-block;
+
+       }
+     }
+ }
+
+
+ .jos-compare-grid-right{
+  background: @brand-primary;
+  color: white;
+  padding: 18px 15px 15px 20px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+
+  .jos-compare-grid-right-list{
+   display: block;
+   position: relative;
+   width: 100%;
+   font-size: 14px;
+   font-weight: 400;
+   color: white;
+
+   .compare--list{
+    text-align: left;
+    list-style: none;
+    width: 100%;
+
+     .compare--entry{
+      line-height: normal;
+      position: relative;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(238, 238, 238, 0.3);
+
+       .compare--link {
+        width: 240px;
+        font-size: 12px;
+        color: white;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &:hover{
+         color: @brand-secondary;
+        }
+       }
+     }
+
+    .btn--item-delete {
+     font-size: 20px;
+     line-height: .875rem;
+     float: right;
+     display: inline-block;
+     position: absolute;
+     right: 0;
+     top: 0;
+
+     &:hover {
+      background: transparent;
+      border: none;
+      color: @brand-secondary;
+     }
+    }
+
+    .jos-compare-action{
+     border-bottom: 0 none;
+
+     .btn--compare-start{
+      border: 1px solid white;
+      text-align: center;
+      color: white;
+      margin-top:20px;
+      width:100%;
+      &:hover{
+       background: #444;
+       color: #eee;
+      }
+     }
+
+     .btn--compare-delete{
+      border: 1px solid white;
+      text-align: center;
+      color: white;
+      margin-top: 10px;
+      width:100%;
+      &:hover{
+       background: #444;
+       color: #eee;
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,221 @@
+/*
+ *  Copyright (C) Thomas Neef | neefit.de - All Rights Reserved
+ * @author  Thomas Neef
+ * @Modul  Projects
+ * @Class  container.less
+ * @date  19.05.20, 17:33
+ */
+
+
+
+.container, .emotion--wrapper {
+  max-width: 1260px;
+  width: 100%;
+ // background: lightpink;
+}
+.emotion--wrapper{
+  padding: 0 20px;
+}
+
+.emotion--wrapper.is--fullscreen{
+  max-width: none;
+  padding: 0 !important;
+}
+
+.jos_emotion_divider_70{
+  width: 100%;
+  height:40px;
+  min-height: 50px;
+
+}
+
+//.is--ctl-listing .sidebar-main + .content--wrapper,
+//.is--ctl-forms .sidebar-main + .content--wrapper,
+.is--ctl-tellafriend .sidebar-main + .content--wrapper,
+.is--ctl-newsletter .sidebar-main + .content--wrapper,
+.is--ctl-sitemap .sidebar-main + .content--wrapper{
+//.is--ctl-custom .sidebar-main + .content--wrapper,
+//.is--ctl-note.is--user .sidebar-main + .content--wrapper,
+//.is--ctl-address .sidebar-main + .content--wrapper{
+//.is--ctl-account.is--user .sidebar-main + .content--wrapper {
+  margin-left: 16.25rem;
+}
+.is--ctl-forms .sidebar-main + .content--wrapper,
+.is--ctl-listing .sidebar-main + .content--wrapper,
+.is--ctl-address .sidebar-main + .content--wrapper,
+.is--ctl-account.is--user .sidebar-main + .content--wrapper {
+  margin-left: 0;
+
+}
+
+
+/* 30em | 480px | Phone Landscape*/
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
+
+  .container, .emotion--wrapper {
+    max-width: 540px;
+    width: 100%;
+   // background: lemonchiffon;
+  }
+  .emotion--wrapper{
+    padding: 0;
+  }
+  .emotion--wrapper.is--fullscreen{
+    max-width: none;
+    padding: 0 !important;
+  }
+
+ // .is--ctl-listing .sidebar-main + .content--wrapper,
+ // .is--ctl-forms .sidebar-main + .content--wrapper,
+ // .is--ctl-tellafriend .sidebar-main + .content--wrapper,
+ // .is--ctl-newsletter .sidebar-main + .content--wrapper,
+//  .is--ctl-sitemap .sidebar-main + .content--wrapper{
+    //.is--ctl-custom .sidebar-main + .content--wrapper,
+    //.is--ctl-note.is--user .sidebar-main + .content--wrapper,
+    //.is--ctl-address .sidebar-main + .content--wrapper{
+    //.is--ctl-account.is--user .sidebar-main + .content--wrapper {
+   // margin-left: 16.25rem;
+ // }
+  .is--ctl-address .sidebar-main + .content--wrapper,
+  .is--ctl-account.is--user .sidebar-main + .content--wrapper {
+    margin-left: 0;
+  }
+
+}
+
+/* 48em | 768px | Tablet*/
+@media screen and (min-width: @tabletViewportWidth){
+
+  .container, .emotion--wrapper {
+    max-width: 738px;
+    width: 100%;
+   // background: lightblue;
+  }
+
+  .emotion--wrapper{
+    padding: 0 ;
+  }
+  .emotion--wrapper.is--fullscreen{
+    max-width: none;
+    padding: 0 !important;
+  }
+
+
+  .is--ctl-listing .sidebar-main + .content--wrapper,
+  .is--ctl-forms .sidebar-main + .content--wrapper,
+  .is--ctl-tellafriend .sidebar-main + .content--wrapper,
+  .is--ctl-newsletter .sidebar-main + .content--wrapper,
+  .is--ctl-sitemap .sidebar-main + .content--wrapper{
+    //.is--ctl-custom .sidebar-main + .content--wrapper,
+    //.is--ctl-note.is--user .sidebar-main + .content--wrapper,
+  //.is--ctl-address .sidebar-main + .content--wrapper{
+    //.is--ctl-account.is--user .sidebar-main + .content--wrapper {
+    margin-left: 16.25rem;
+  }
+  .is--ctl-address .sidebar-main + .content--wrapper,
+  .is--ctl-account.is--user .sidebar-main + .content--wrapper {
+    margin-left: 0;
+
+  }
+
+
+  .sidebar-main.off-canvas, #cookie-consent, #cookie-consent {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 300px;
+    overflow: hidden;
+  }
+
+  //.is--ctl-listing .sidebar-main + .content--wrapper,
+  .is--ctl-forms .sidebar-main + .content--wrapper,
+  .is--ctl-tellafriend .sidebar-main + .content--wrapper,
+  .is--ctl-newsletter .sidebar-main + .content--wrapper,
+  .is--ctl-sitemap .sidebar-main + .content--wrapper{
+  //.is--ctl-custom .sidebar-main + .content--wrapper,
+  //.is--ctl-note.is--user .sidebar-main + .content--wrapper,
+  //.is--ctl-address .sidebar-main + .content--wrapper,
+  //.is--ctl-account.is--user .sidebar-main + .content--wrapper {
+    margin-left: 300px;
+  }
+
+ .is--ctl-address .sidebar-main + .content--wrapper,
+ .is--ctl-account.is--user .sidebar-main + .content--wrapper,
+  .is--ctl-listing .sidebar-main + .content--wrapper,
+  .is--ctl-index .sidebar-left[data-nsin="0"] + .content--wrapper,
+  .is--ctl-register .sidebar-left[data-nsre="0"] + .content--wrapper,
+  .is--ctl-blog .sidebar-left[data-nsbl="0"] + .content--wrapper,
+  .is--ctl-note .sidebar-left[data-nsno="0"] + .content--wrapper,
+  .is--ctl-detail .sidebar-left[data-nsde="0"] + .content--wrapper,
+  .is--ctl-listing .sidebar-left[data-nsli="0"] + .content--wrapper,
+  .is--ctl-listing.is--no-sidebar .sidebar-left[data-nsli="0"] + .content--wrapper,
+  .is--ctl-live-shopping .sidebar-left[data-nsli="0"] + .content--wrapper,
+  .is--ctl-live-shopping.is--no-sidebar .sidebar-left[data-nsli="0"] + .content--wrapper,
+  .is--ctl-search .sidebar-left[data-nsse="0"] + .content--wrapper,
+  .is--ctl-campaign .sidebar-left[data-nsca="0"] + .content--wrapper,
+  .is--ctl-account .sidebar-left[data-nsac="0"] + .content--wrapper,
+  .is--ctl-account.is--user .sidebar-left[data-nsac="0"] + .content--wrapper,
+  .is--ctl-account.is--act-logout .sidebar-left[data-nsin="0"] + .content--wrapper,
+  .is--ctl-account.is--act-password .sidebar-left[data-nspw="0"] + .content--wrapper,
+  .is--ctl-account.is--act-resetPassword .sidebar-left[data-nsac="0"] + .content--wrapper,
+  .is--ctl-custom .sidebar-left[data-nscu="0"] + .content--wrapper,
+  .is--ctl-newsletter .sidebar-left[data-nsne="0"] + .content--wrapper,
+  .is--ctl-forms .sidebar-left[data-nsfo="0"] + .content--wrapper,
+  .is--ctl-sitemap .sidebar-left[data-nssm="0"] + .content--wrapper,
+  .is--ctl-address .sidebar-left[data-nsad="0"] + .content--wrapper,
+  .is--ctl-custom .sidebar-main + .content--wrapper,
+  .is--ctl-note.is--user .sidebar-main + .content--wrapper{
+    margin-left: 0rem;
+  }
+}
+
+
+
+/* 64em | 1024px | Tablet Landscape*/
+@media screen and (min-width: @tabletLandscapeViewportWidth){
+
+  .container, .emotion--wrapper {
+    max-width: 994px;
+    width: 100%;
+   // background: lime;
+  }
+
+  .emotion--wrapper{
+    padding: 0;
+  }
+  .emotion--wrapper.is--fullscreen{
+    max-width: none;
+    padding: 0 !important;
+  }
+
+
+  .is--ctl-address .sidebar-main + .content--wrapper,
+  .is--ctl-account.is--user .sidebar-main + .content--wrapper {
+    margin-left: 300px;
+  }
+
+
+}
+
+
+/* 78.75em | Desktop*/
+@media screen and (min-width: @desktopViewportWidth){
+
+  .container, .emotion--wrapper {
+    max-width: 1260px;
+    width: 100%;
+    //background: yellow;
+  }
+  .emotion--wrapper{
+    padding: 0;
+  }
+  .emotion--wrapper.is--fullscreen{
+    max-width: none;
+    padding: 0 !important;
+  }
+  .is--ctl-index .sidebar-left[data-nsin="0"] + .content--wrapper, .is--ctl-register .sidebar-left[data-nsre="0"] + .content--wrapper, .is--ctl-blog .sidebar-left[data-nsbl="0"] + .content--wrapper, .is--ctl-note .sidebar-left[data-nsno="0"] + .content--wrapper, .is--ctl-detail .sidebar-left[data-nsde="0"] + .content--wrapper, .is--ctl-listing .sidebar-left[data-nsli="0"] + .content--wrapper, .is--ctl-listing.is--no-sidebar .sidebar-left[data-nsli="0"] + .content--wrapper, .is--ctl-live-shopping .sidebar-left[data-nsli="0"] + .content--wrapper, .is--ctl-live-shopping.is--no-sidebar .sidebar-left[data-nsli="0"] + .content--wrapper, .is--ctl-search .sidebar-left[data-nsse="0"] + .content--wrapper, .is--ctl-campaign .sidebar-left[data-nsca="0"] + .content--wrapper, .is--ctl-account .sidebar-left[data-nsac="0"] + .content--wrapper, .is--ctl-account.is--user .sidebar-left[data-nsac="0"] + .content--wrapper, .is--ctl-account.is--act-logout .sidebar-left[data-nsin="0"] + .content--wrapper, .is--ctl-account.is--act-password .sidebar-left[data-nspw="0"] + .content--wrapper, .is--ctl-account.is--act-resetPassword .sidebar-left[data-nsac="0"] + .content--wrapper, .is--ctl-custom .sidebar-left[data-nscu="0"] + .content--wrapper, .is--ctl-newsletter .sidebar-left[data-nsne="0"] + .content--wrapper, .is--ctl-forms .sidebar-left[data-nsfo="0"] + .content--wrapper, .is--ctl-sitemap .sidebar-left[data-nssm="0"] + .content--wrapper, .is--ctl-address .sidebar-left[data-nsad="0"] + .content--wrapper {
+    margin-left: 0rem;
+  }
+
+}

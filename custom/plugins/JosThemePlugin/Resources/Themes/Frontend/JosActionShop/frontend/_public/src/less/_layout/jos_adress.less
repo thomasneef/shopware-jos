@@ -1,0 +1,335 @@
+/*
+ *  Copyright (C) Thomas Neef | neefit.de - All Rights Reserved
+ * @author  Thomas Neef
+ * @Modul  Projects
+ * @Class  jos-adress.less
+ * @date  16.05.20, 10:58
+ */
+
+.account--address .address--content, .address-manager--modal .address--content {
+  margin: 0;
+}
+
+/*
+.account--welcome .panel--title {
+  padding: 20px 0 0 20px;
+  margin: 0;
+}
+
+.account--actions {
+  margin: 0 20px 40px 20px;
+}
+*/
+/*
+.account--welcome .panel--title {
+  padding-top: 0;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.panel h1.panel--title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #212221;
+  text-align: left;
+}
+.panel .panel--title {
+  font-weight: 600;
+  font-size: 20px;
+}
+*/
+
+.account--address .address--item-content .panel--actions, .address-manager--modal .address--item-content .panel--actions {
+  display: table-cell;
+  vertical-align: bottom;
+  padding: 15px 0;
+}
+
+
+.account--address.account--content {
+  .address--content {
+    .jos-adress-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 20px 20px;
+      grid-template-areas: ".";
+
+      .jos-adress-inner-block {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+
+        .jos-adress-inner-item-titel {
+          width: 100%;
+          padding: 0;
+          height: auto;
+          border-bottom: 1px solid #eee;
+
+          .jos-adress-panel--title {
+            padding: 0 10px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+
+        .jos-adress-inner-item {
+          width: 100%;
+          height: 85px;
+          min-height: 85px;
+          padding: 15px 0 0 0;
+
+          .address--item-content.address--box {
+            padding: 0 10px;
+          }
+        }
+
+        .jos-adress-inner-action-edit {
+          width: 100%;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+          -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+          -webkit-align-content: stretch;
+          -ms-flex-line-pack: stretch;
+          align-content: stretch;
+          -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+          height: 30px;
+          border-bottom: 1px solid #eee;
+
+          .jos-adress-set{
+            background: none;
+            border: 0 none;
+            font-weight: 600;
+            padding: 0 10px 0 0;
+          }
+
+          .jos-adr-edit-icon{
+            margin: 0 5px 0 0;
+          }
+
+        }
+
+        .jos-adress-inner-action {
+          width: 100%;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+          -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+          -webkit-align-content: stretch;
+          -ms-flex-line-pack: stretch;
+          align-content: stretch;
+          -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+          padding: 10px 0;
+
+          .btn{
+            margin: 0 20px 0 0;
+
+            &:hover{
+              background: @jos-button-ouline-hover-bg;
+              color: @jos-button-ouline-hover-font;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+/* 30em | 480px | Phone Landscape*/
+@media screen and (min-width: @phoneLandscapeViewportWidth){
+
+
+
+  .account--actions {
+    margin: 0 ;
+  }
+
+}
+
+/* 64em | 1024px | Tablet Landscape*/
+@media screen and (min-width: @tabletLandscapeViewportWidth){
+
+
+  .account--actions {
+    margin: 0 ;
+  }
+  /*
+  .account--welcome .panel--title {
+    padding-top: 0;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .panel h1.panel--title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #212221;
+    text-align: left;
+  }
+  .panel .panel--title {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+*/
+
+  .account--address.account--content {
+    .address--content {
+      .jos-adress-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px 20px;
+        grid-template-areas: ". .";
+
+        .jos-adress-inner-block {
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+          -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+          -webkit-align-content: stretch;
+          -ms-flex-line-pack: stretch;
+          align-content: stretch;
+          -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+
+          .jos-adress-inner-item-titel {
+            width: 100%;
+            padding: 0;
+            height: 50px;
+            border-bottom: 1px solid #eee;
+
+            .jos-adress-panel--title {
+              padding: 0 10px;
+              font-size: 14px;
+              font-weight: 600;
+            }
+          }
+
+          .jos-adress-inner-item {
+            width: 100%;
+            height: 110px;
+            min-height: 110px;
+            padding: 15px 0 0 0;
+
+            .address--item-content.address--box {
+              padding: 0 10px;
+            }
+          }
+
+          .jos-adress-inner-action-edit {
+            width: 100%;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-align-content: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            height: 30px;
+            border-bottom: 1px solid #eee;
+
+            .jos-adress-set{
+              background: none;
+              border: 0 none;
+              font-weight: 600;
+              padding: 0 10px 0 0;
+            }
+
+
+          }
+
+          .jos-adress-inner-action {
+            width: 100%;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-align-content: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+
+            .btn{
+              margin: 0 20px 0 0;
+              &:hover{
+                background: @jos-button-ouline-hover-bg;
+                color: @jos-button-ouline-hover-font;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,293 @@
+/*
+ *  Copyright (C) Thomas Neef | neefit.de - All Rights Reserved
+ * @author  Thomas Neef
+ * @Modul  Projects
+ * @Class  jos_account.less
+ * @date  26.05.20, 08:20
+ */
+
+
+.account--orders-overview {
+  .panel--tr {
+    padding: 10px  10px ;
+  }
+
+}
+
+.account--dropdown-navigation .navigation--signin .navigation--signin-btn.btn {
+  line-height: 1.5rem;
+  padding: 5px 10px;
+  color: white;
+  font-weight: 500;
+  background: @brand-primary;
+  height: 36px;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid @brand-primary;
+
+}
+
+
+
+
+/* 30em | 480px | Phone Landscape*/
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
+  .account--orders-overview {
+    .panel--tr {
+      padding: 10px  0 ;
+    }
+    .panel--td {
+      padding: 0.3125rem 0 0.3125rem 0;
+    }
+
+  }
+  .account--dropdown-navigation .navigation--signin {
+    border-bottom: 0 none;
+  }
+
+  .account--dropdown-navigation .navigation--signin .navigation--signin-btn.btn {
+    line-height: 1.5rem;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 500;
+    background: @brand-primary;
+    height: 36px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid @brand-primary;
+
+    }
+
+}
+
+/* 48em | 768px | Tablet*/
+@media screen and (min-width: @tabletViewportWidth){
+
+  .account--orders-overview {
+    .panel--tr {
+      .account--orders-overview {
+        .panel--tr {
+          padding: 10px  0 ;
+        }
+
+        .panel--th{
+          padding: 10px  0 ;
+        }
+
+        .panel--td {
+          padding: 0.3125rem 0 0.3125rem 0;
+        }
+
+      }
+    }
+
+    .panel--th{
+
+    }
+
+    .panel--td {
+      padding: 0.3125rem 0 0.3125rem 0;
+    }
+
+  }
+
+
+  .account--content {
+    margin: 20px 0 0 0;
+  }
+
+  .account--profile {
+    padding-top: 20px;
+  }
+
+  .account--address.account--content {
+    padding-top: 20px;
+  }
+
+  .account--welcome .panel--title {
+    padding: 20px 0 30px 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+
+  .account--dropdown-navigation {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    .account--menu{
+
+      .navigation--headline {
+        height: auto;
+        padding: 15px 0 20px 0;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .account--menu-container {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        display: block;
+        position: relative;
+        background: white;
+        padding: 0;
+
+        .sidebar--navigation.navigation--list{
+          .navigation--entry {
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+          }
+
+          .navigation--entry.jos-logout, .navigation--entry.jos-login{
+            border-bottom: 0 none;
+            padding-top: 20px;
+            padding-bottom: 20px;
+          }
+
+          .btn.navigation--link{
+            line-height: 1.5rem;
+            padding: 5px 10px;
+            color: white;
+            font-weight: 500;
+            background: @brand-primary;
+            width: 60%;
+            height: 36px;
+            font-size: 14px;
+            text-decoration: none;
+            text-align: center;
+            margin: 0 auto;
+            border: 1px solid @brand-primary;
+
+          }
+
+          .navigation--signin-btn{
+            line-height: 1.5rem;
+            padding: 5px 10px;
+            color: white;
+            font-weight: 500;
+            background: @brand-primary;
+            height: 36px;
+            font-size: 14px;
+            text-decoration: none;
+            text-align: center;
+            margin: 0 auto;
+            //width: 88%;
+            border: 1px solid @brand-primary;
+
+          }
+
+
+          .jos-account-new-infotext-container{
+            padding: 15px 0;
+            text-align: center;
+            margin: 0 auto;
+          }
+
+        }
+      }
+    }
+  }
+
+
+
+
+
+}
+
+
+
+/* 64em | 1024px | Tablet Landscape*/
+@media screen and (min-width: @tabletLandscapeViewportWidth){
+
+
+  .sidebar-main.is--left{
+
+
+  }.sidebar--categories-wrapper{
+
+       .account--menu {
+         border: 0 none;
+         margin-top: 20px;
+
+         .navigation--headline {
+           padding: 0 0 15px 0 !important;
+           margin: 0 0 20px 0;
+           font-size: 16px;
+           color: @brand-primary;
+           font-weight: 600;
+           display: block;
+           text-decoration: none !important;
+           border-bottom: 1px solid #eee;
+           text-align: left;
+         }
+
+         .account--menu-container{
+           padding: 0;
+
+           .sidebar--navigation.navigation--list{
+
+             .navigation--entry{
+               padding:0;
+             }
+           }
+         }
+       }
+   }
+
+
+  .account--content {
+    margin: 20px 0 0 0;
+  }
+
+  .account--profile {
+    padding-top: 20px;
+  }
+
+  .account--address.account--content {
+    padding-top: 20px;
+  }
+
+  .account--dropdown-navigation .navigation--signin {
+    border-bottom: 0 none;
+  }
+
+  .account--welcome .panel--title {
+    padding: 20px 0 30px 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+
+  .account--menu.is--personalized .navigation--link.navigation--personalized {
+    padding: 0;
+    margin: 15px 0;
+    background: transparent;
+    border: 0 none;
+    color: @brand-primary;
+    font-weight: 400;
+  }
+
+
+
+
+}
+
+
+/* 78.75em | Desktop*/
+@media screen and (min-width: @desktopViewportWidth){
+
+  .account--menu {
+    border: 0 none;
+  }
+
+  .account--content {
+    margin: 20px 0 0 0;
+  }
+
+}

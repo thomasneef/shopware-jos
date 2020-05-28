@@ -1,0 +1,211 @@
+.action--filter-btn {
+background: @brand-primary;
+color: #fff;
+}
+
+.action--filter-btn .filter--trigger {
+    color: white !important;
+    line-height: 23px;
+}
+
+
+.listing{
+    margin: -1% 0 0 -1%;
+    .product--box{
+    
+        .box--content{
+            border: 0 none;
+            height: 270px !important;
+           // .material-design-box-shadow();
+           // .material-design-box-shadow-hover();
+        }
+
+        .box--content:hover{
+            // .material-design-box-shadow();
+            // .material-design-box-shadow-hover();
+            border: 1px solid @brand-secondary;
+        }
+
+    }
+
+}
+
+.listing--container{
+    overflow:visible;
+}
+
+.listing--sidebar{
+    .sidebar-filter{
+
+        .action--filter-options{
+
+            border:none;
+
+        }
+    }
+}
+
+.listing--actions {
+    .action--sort .sort--select:after,
+    .action--sort .sort--select .sort--field {
+        background-image: none;
+    }
+}
+
+.action--filter-options{
+    .filter--close-btn{
+
+        background-image:none;
+
+    }
+
+} 
+
+.category--teaser{
+    .unitize(padding,0);
+
+
+    .panel--title {
+        font-weight: 500;
+        font-size: 26px;
+        color: #212221;
+        text-align: center;
+    }
+}
+
+.filter-panel--title{
+    .unitize(font-size,@font-size-base);
+}
+
+.listing--content {
+    .jos-kategorie-title{
+        text-align: center;
+        .jos-cat-title{
+            .unitize-margin(0, 0, 48, 0, 16);
+        }
+    }
+}
+
+
+
+
+/* 30em | 480px | Phone Landscape*/
+@media screen and (min-width: @phoneLandscapeViewportWidth){
+    .listing{
+        margin: -1% 0 0 -1%;
+        .product--box{
+
+            .box--content{
+                border: 0 none;
+                height: 270px !important;
+                // .material-design-box-shadow();
+                // .material-design-box-shadow-hover();
+            }
+
+            .box--content:hover{
+                // .material-design-box-shadow();
+                // .material-design-box-shadow-hover();
+                border: 1px solid @brand-secondary;
+            }
+
+        }
+
+    }
+}
+
+/* 48em | 768px | Tablet*/
+@media screen and (min-width: @tabletViewportWidth){
+
+    .listing{
+        margin: -1% 0 0 -1%;
+        .product--box{
+
+            .box--content{
+                border: 0 none;
+                height: 300px !important;
+                // .material-design-box-shadow();
+                // .material-design-box-shadow-hover();
+            }
+
+            .box--content:hover{
+                // .material-design-box-shadow();
+                // .material-design-box-shadow-hover();
+                border: 1px solid @brand-secondary;
+            }
+
+        }
+
+    }
+
+    .listing--actions {
+
+        background: @titan-topbar-color;
+        border: 0 none;
+        //.material-design-box-shadow();
+    }
+
+    .listing--sidebar + .content--wrapper{
+        .unitize(margin-left,250);
+    }
+
+
+
+    .category--teaser{
+        padding: 15px 0 20px 0;
+        margin:0;
+        border-bottom:none!important;
+
+        .panel--title {
+            font-weight: 500;
+            font-size: 26px;
+            color: #212221;
+            text-align: center;
+        }
+
+        .hero--headline {
+            padding:0;
+            margin:0;
+        }
+        
+        .hero--text{
+            padding-left:0;
+        }
+    } 
+
+}
+
+/* 64em | 1024px | Tablet Landscape*/
+@media screen and (min-width: @tabletLandscapeViewportWidth){
+
+    .listing{
+        margin: -1% 0 0 -1%;
+        .product--box{
+
+            .box--content{
+                border: 1px solid white;
+                height: 330px !important;
+                // .material-design-box-shadow();
+                // .material-design-box-shadow-hover();
+            }
+
+            .box--content:hover{
+                // .material-design-box-shadow();
+                // .material-design-box-shadow-hover();
+                border: 1px solid @brand-secondary;
+            }
+
+        }
+
+    }
+
+
+}
+
+/* 78.75em | Desktop*/
+@media screen and (min-width: @desktopViewportWidth){
+
+    .listing--content {
+        .unitize(padding-top,10);
+    }
+
+}

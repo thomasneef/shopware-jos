@@ -1,0 +1,765 @@
+/*
+ *  Copyright (C) Thomas Neef | neefit.de - All Rights Reserved
+ * @author  Thomas Neef
+ * @Modul  Projects
+ * @Class  confirm.less
+ * @date  13.05.20, 21:20
+ */
+.alert.is--error {
+  color: @highlight-error;
+  background: transparent;
+  border: 1px solid @highlight-error;
+}
+
+.confirm--content{
+   padding-top: 0;
+  .panel.has--border {
+    border: 1px solid #eee;
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+  .panel--title, .panel .panel--title,.panel--title.primary{
+    border: 0 none;
+    font-size: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  .panel--body.is--wide {
+    padding: 1.25rem 0 5px 0;
+  }
+
+  .product--table .table--header .panel--th {
+    font-size: 14px !important;
+  }
+  .product--table .content--title {
+    font-size: 14px;
+  }
+
+  .product--table .delivery--information {
+    font-size: 12px;
+  }
+
+
+  .confirm--content .add-product--field, .confirm--content .add-voucher--field {
+    border-top-left-radius: 0 !important;;
+    border-top-right-radius: 0 !important;;
+    border-bottom-right-radius: 0 !important;;
+    border-bottom-left-radius: 0 !important;;
+    background-clip: padding-box;
+    width: 90%;
+  }
+  .confirm--content .add-product--button, .confirm--content .add-voucher--button {
+    padding: 0;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;;
+    border-bottom-right-radius: 0 !important;;
+    border-bottom-left-radius: 0 !important;;
+    background-clip: padding-box;
+    width: 10%;
+    text-align: center;
+  }
+
+
+  .product--table .table--media .table--media-outer {
+    border-radius: 0;
+    border: 0 none !important;
+    margin: 0 auto;
+  }
+  /* ADRESSEN
+  .information--panel-wrapper{
+    .information--panel-item.information--panel-address {
+      .panel--actions.is--wide {
+        padding: 1.25rem 0 1.25rem 0;
+      }
+    }
+  }
+  */
+}
+
+.jos-adress-container-flex {
+  .jos-adress-container-flex-billing-adress{
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .jos-adress-container-flex-billing-adress-action {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding: 15px 0;
+
+    .address--actions-change, .address--actions-newadress{
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+
+
+    .btn {
+      border-radius: 0;
+      background-image: none;
+      background: transparent;
+      color: @brand-primary;
+      border: 1px solid @brand-primary;
+      font-weight: 400;
+      text-align: center;
+      margin-right: 0;
+      width: 100%;
+
+      &:hover{
+        background: @jos-button-ouline-hover-bg;
+        color: @jos-button-ouline-hover-font;
+      }
+
+
+    }
+  }
+}
+
+
+
+
+
+
+.jos-adressshipping-container-flex {
+    .jos-billing-box-row{
+      .jos-billing-box-row-billing-adress{
+        padding: 10px 0;
+      }
+      .jos-billing-box-row-billing-action{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        padding: 10px 0;
+        .btn {
+          border-radius: 0;
+          background-image: none;
+          background: transparent;
+          color: @brand-primary;
+          border: 1px solid @brand-primary;
+          font-weight: 400;
+          text-align: center;
+          margin-right: 0;
+          margin-top: 5px;
+          width: 100%;
+
+          &:hover{
+            background: @jos-button-ouline-hover-bg;
+            color: @jos-button-ouline-hover-font;
+          }
+        }
+      }
+    }
+
+  .jos-shipping-box-row{
+    .jos-billing-box-row-shipping-adress{
+      padding: 10px 0;
+    }
+    .jos-billing-box-row-shipping-action{
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      padding: 10px 0;
+      .btn {
+        border-radius: 0;
+        background-image: none;
+        background: transparent;
+        color: @brand-primary;
+        border: 1px solid @brand-primary;
+        font-weight: 400;
+        text-align: center;
+        margin-right: 0;
+        margin-top: 5px;
+        width: 100%;
+
+        &:hover{
+          background: @jos-button-ouline-hover-bg;
+          color: @jos-button-ouline-hover-font;
+        }
+      }
+    }
+  }
+}
+
+.jos-pay-container-flex {
+  .jos-pay-container-flex-text{
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .jos-pay-container-flex-action {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding: 10px 0;
+    .btn {
+      border-radius: 0;
+      background-image: none;
+      background: transparent;
+      color: @brand-primary;
+      border: 1px solid @brand-primary;
+      font-weight: 400;
+      text-align: center;
+      margin-right: 0;
+      margin-top: 5px;
+      width: 100%;
+
+      &:hover{
+        background: @jos-button-ouline-hover-bg;
+        color: @jos-button-ouline-hover-font;
+      }
+    }
+  }
+
+
+
+}
+
+
+.product--table{
+  .panel, .panel.has--border{
+    border: 0 none;
+    padding: 0;
+  }
+}
+
+.content--confirm{
+  .confirm--inner-container{
+    .payment--method-list{
+      .payment--method-headline{
+        margin-left: 30px;
+      }
+    }
+
+    .dispatch--method-list{
+      .dispatch--method-headline{
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+.footer--benefit {
+display: none;
+}
+
+
+.product--table .column--product .table--content .product--essential-features{
+  display: none
+}
+.product--table .content--title {
+font-weight: 600;
+}
+
+.confirm--content .add-product--field, .confirm--content .add-voucher--field {
+  border-top-left-radius: 0 !important;;
+  border-top-right-radius: 0 !important;;
+  border-bottom-right-radius: 0 !important;;
+  border-bottom-left-radius: 0 !important;;
+  background-clip: padding-box;
+  width: 90%;
+}
+.confirm--content .add-product--button, .confirm--content .add-voucher--button {
+  padding: 0;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;;
+  border-bottom-right-radius: 0 !important;;
+  border-bottom-left-radius: 0 !important;;
+  background-clip: padding-box;
+  width: 10%;
+  text-align: center;
+}
+
+
+/* SHIPPING PAYMENT */
+
+// Checkout Confirm
+.shipping-payment--information{
+  .confirm--inner-container{
+    .payment--method-list{
+      .panel--body.is--wide{
+        .payment--method-list,
+        .dispatch--method-list {
+          .unitize(margin-bottom, 10);
+        }
+
+        .payment--method,
+        .dispatch--method {
+          .unitize(padding-bottom, 10);
+          .unitize(margin-bottom, 10);
+          border-bottom: 1px solid @panel-border;
+
+          .method_last {
+            border: 0 none;
+          }
+        }
+
+        .payment--method.method_last,
+        .dispatch--method.method_last {
+          border: 0 none;
+        }
+
+        .method--input {
+          .unitize(width, 40);
+          text-align: center;
+          float: left;
+        }
+
+        .method--label {
+          .unitize(padding-left, 40);
+          width: 100%;
+        }
+
+        .method--description {
+          .unitize(padding-left, 40);
+
+          font-size: 12px;
+
+          h2,h3,h4{
+            font-size: 12px;
+            font-weight: 600;
+            margin: 0;
+            display: none;
+          }
+          p{
+            font-size: 12px;
+          }
+        }
+
+        .payment--method-logo {
+          .unitize(margin-left, 40);
+        }
+
+        .method--bankdata {
+          .unitize(padding-left, 40);
+
+          input[type="text"] {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.content--confirm .confirm--inner-container .dispatch--method-list .dispatch--method-headline,
+.content--confirm .confirm--inner-container .payment--method-list .payment--method-headline {
+  margin-left:0;
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.is--act-shippingpayment .product--table .panel--body {
+  padding: 20px 7px 20px 7px;
+}
+.aggregation--list {
+  margin:0;
+  padding: 0;
+}
+.content--confirm .aggregation--list {
+  margin:0;
+  padding: 0 15px;
+  font-size: 12px;
+  line-height: 1.5rem;
+}
+
+.confirm--content .product--table {
+  margin: 0;
+  padding: 0 20px;
+}
+.basket--footer{
+  padding: 0 20px;
+}
+
+.confirm--content .product--table .basket--footer {
+   margin: 0;
+
+}
+
+.confirm--actions.table--actions.actions--bottom{
+  padding: 0 20px;
+}
+
+/* 30em | 480px | Phone Landscape*/
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
+
+  .confirm--actions.table--actions.actions--bottom{
+    padding: 0;
+  }
+
+  .confirm--content .add-product--field, .confirm--content .add-voucher--field {
+    border-top-left-radius: 0 !important;;
+    border-top-right-radius: 0 !important;;
+    border-bottom-right-radius: 0 !important;;
+    border-bottom-left-radius: 0 !important;;
+    background-clip: padding-box;
+    width: 90%;
+  }
+  .confirm--content .add-product--button, .confirm--content .add-voucher--button {
+    padding: 0;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;;
+    border-bottom-right-radius: 0 !important;;
+    border-bottom-left-radius: 0 !important;;
+    background-clip: padding-box;
+    width: 10%;
+    text-align: center;
+  }
+
+  .content--confirm .confirm--inner-container .dispatch--method-list .dispatch--method-headline,
+  .content--confirm .confirm--inner-container .payment--method-list .payment--method-headline {
+    margin-left: 0;
+    font-size: 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .is--act-shippingpayment .product--table .panel--body {
+    padding: 20px 0 20px 0;
+  }
+  .aggregation--list {
+    padding: 10px 0 10px 0;
+  }
+  .content--confirm .aggregation--list {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+
+  .confirm--content .product--table {
+    margin: 0;
+    padding: 0 ;
+  }
+
+}
+
+/* 48em | 768px | Tablet*/
+@media screen and (min-width: @tabletViewportWidth){
+
+  .confirm--content .add-product--field, .confirm--content .add-voucher--field {
+    border-top-left-radius: 0 !important;;
+    border-top-right-radius: 0 !important;;
+    border-bottom-right-radius: 0 !important;;
+    border-bottom-left-radius: 0 !important;;
+    background-clip: padding-box;
+    width: 90%;
+  }
+  .confirm--content .add-product--button, .confirm--content .add-voucher--button {
+    padding: 0;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;;
+    border-bottom-right-radius: 0 !important;;
+    border-bottom-left-radius: 0 !important;;
+    background-clip: padding-box;
+    width: 10%;
+    text-align: center;
+  }
+
+  .content--confirm .confirm--inner-container .dispatch--method-list .dispatch--method-headline,
+  .content--confirm .confirm--inner-container .payment--method-list .payment--method-headline {
+    margin-left: 0;
+    font-size: 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .is--act-shippingpayment .product--table .panel--body {
+    padding: 20px 0 20px 0;
+  }
+
+}
+
+
+
+/* 64em | 1024px | Tablet Landscape*/
+@media screen and (min-width: @tabletLandscapeViewportWidth){
+  .confirm--content .add-product--field, .confirm--content .add-voucher--field {
+    border-top-left-radius: 0 !important;;
+    border-top-right-radius: 0 !important;;
+    border-bottom-right-radius: 0 !important;;
+    border-bottom-left-radius: 0 !important;;
+    background-clip: padding-box;
+    width: 90%;
+  }
+  .confirm--content .add-product--button, .confirm--content .add-voucher--button {
+    padding: 0;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;;
+    border-bottom-right-radius: 0 !important;;
+    border-bottom-left-radius: 0 !important;;
+    background-clip: padding-box;
+    width: 10%;
+    text-align: center;
+  }
+
+  .product--table{
+     .panel, .panel.has--border{
+       border: 0 none;
+       padding: 0;
+     }
+  }
+
+  .jos-pay-container-flex {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 100%;
+
+    .jos-pay-container-flex-text{
+      width: 100%;
+      height: 125px;
+      min-height: 125px;
+      padding: 15px 0;
+    }
+
+    .jos-pay-container-flex-action {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 1fr;
+      gap: 10px 10px;
+      grid-template-areas: ". . .";
+      padding: 15px 0;
+
+      .btn {
+        border-radius: 0;
+        background-image: none;
+        background: transparent;
+        color: @brand-primary;
+        border: 1px solid @brand-primary;
+        font-weight: 400;
+        text-align: center;
+        margin-right: 15px;
+
+        &:hover{
+          background: @jos-button-ouline-hover-bg;
+          color: @jos-button-ouline-hover-font;
+        }
+
+      }
+    }
+  }
+
+  .jos-adress-container-flex {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 100%;
+
+    .jos-adress-container-flex-billing-adress{
+      width: 100%;
+      height: 125px;
+      min-height: 125px;
+      padding: 15px 0;
+    }
+
+    .jos-adress-container-flex-billing-adress-action {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      padding: 15px 0;
+
+      .address--actions-change, .address--actions-newadress{
+        margin-right: 10px;
+        margin-bottom: 0;
+      }
+
+      .btn {
+        border-radius: 0;
+        background-image: none;
+        background: transparent;
+        color: @brand-primary;
+        border: 1px solid @brand-primary;
+        font-weight: 400;
+        text-align: center;
+        margin-right: 15px;
+
+        &:hover{
+          background: @jos-button-ouline-hover-bg;
+          color: @jos-button-ouline-hover-font;
+        }
+      }
+    }
+  }
+
+
+  /* Billing/ Shipping diff */
+  .jos-adressshipping-container-flex {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 100%;
+
+
+    .jos-billing-box-row{
+      width: 50%;
+      padding: 0 20px 15px 0;
+
+      .jos-billing-box-row-billing-adress{
+        width: 100%;
+        height: 140px;
+        min-height: 140px;
+        padding: 15px 0;
+      }
+
+      .jos-billing-box-row-billing-action{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        padding: 15px 0;
+
+        .address--actions-change{
+          margin-right: 5px;
+        }
+
+        .btn {
+          border-radius: 0;
+          background-image: none;
+          background: transparent;
+          color: @brand-primary;
+          border: 1px solid @brand-primary;
+          font-weight: 400;
+          text-align: center;
+
+          &:hover{
+            background: @jos-button-ouline-hover-bg;
+            color: @jos-button-ouline-hover-font;
+          }
+        }
+      }
+    }
+
+    .jos-shipping-box-row{
+      width: 50%;
+      padding: 0 0 15px 0;
+
+      .jos-billing-box-row-shipping-adress{
+        width: 100%;
+        height: 140px;
+        min-height: 140px;
+        padding: 15px 0;
+      }
+
+      .jos-billing-box-row-shipping-action{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        padding: 15px 0;
+
+
+        .btn {
+          border-radius: 0;
+          background-image: none;
+          background: transparent;
+          color: @brand-primary;
+          border: 1px solid @brand-primary;
+          font-weight: 400;
+          text-align: center;
+          margin-right: 15px;
+
+          &:hover{
+            background: @jos-button-ouline-hover-bg;
+            color: @jos-button-ouline-hover-font;
+          }
+        }
+      }
+    }
+  }
+
+  .content--confirm .confirm--inner-container .dispatch--method-list .dispatch--method-headline,
+  .content--confirm .confirm--inner-container .payment--method-list .payment--method-headline {
+    margin-left: 0;
+    font-size: 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+
+  .is--act-shippingpayment .product--table .panel--body {
+    padding: 20px 0 20px 0;
+  }
+}
+
+
+

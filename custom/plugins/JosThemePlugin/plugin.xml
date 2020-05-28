@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.5/engine/Shopware/Components/Plugin/schema/plugin.xsd">
+<label lang="de">JosThemePlugin</label>
+<label lang="en">JosThemePlugin</label>
+<version>1.0.1</version>
+<copyright>Copyright (c) 2020 Thomas Neef</copyright>
+<license>proprietary</license>
+<link>http://www.neefit.de</link>
+<author>Thomas Neef</author>
+<compatibility minVersion="5.5.0"/>
+
+    <changelog version="1.0.0">
+        <changes lang="de"><![CDATA[First initial Version]]></changes>
+        <changes lang="en"><![CDATA[First initial Version]]></changes>
+    </changelog>
+
+    <changelog version="1.0.1">
+        <changes lang="de">
+            <![CDATA[
+               <b>Bugfixes und Funktionserweiterungen</b>
+               <hr>
+                <ul>
+                    <li>Restrukturierung Funktionsaufrufe - Auslagern nach Verwendung</li>
+                    <li>neues Haendling für Images</li>
+                    <li>Optimierte LEss Struktur</li>
+                    <li>Theme nur auf Responsive extended</li>
+                    <li>Minimierung Tpl files und Codebasis</li>
+                    <li>Neue Theme Verwaltung</li>
+                    <li>glabal Variables</li>
+                </ul>
+                <hr>
+                <span>
+                /* 30em | 480px | Phone Landscape*/<br>
+                @media screen and (min-width: @phoneLandscapeViewportWidth)<br><br>
+                /* 48em | 768px | Tablet*/<br>
+                @media screen and (min-width: @tabletViewportWidth)<br><br>
+                /* 64em | 1024px | Tablet Landscape*/<br>
+                @media screen and (min-width: @tabletLandscapeViewportWidth)<br><br>
+                /* 78.75em | Desktop*/<br>
+                @media screen and (min-width: @desktopViewportWidth)<br><br>
+<br><br>
+                @listing-actions-bg:#ffffff;<br>
+                @highlight-success:#5fb95f;<br>
+                @highlight-success-hover:#509a50;<br>
+                @highlight-error:#b70300;<br>
+                @highlight-notice:#F1C40F;<br>
+                @highlight-info:#4AA3DF;<br>
+<br><br>
+                @overlay-bg:@brand-primary;<br>
+                @overlay-dark-bg:@overlay-bg;<br>
+                @overlay-light-bg:#FFFFFF;<br>
+                @overlay-opacity:0.8;<br>
+<br><br>
+                @panel-header-bg:@gray-light;<br>
+                @panel-header-color:@text-color;<br>
+                @panel-border:@border-color;<br>
+                @panel-bg:#FFFFFF;<br>
+                @label-color:@text-color;<br>
+<br><br>
+                @input-bg: #f9f9f9;<br>
+                @input-color: #262626;<br>
+                @input-placeholder-color:lighten(@text-color, 15%);<br>
+                @input-border: #d4d4d4;<br>
+                @input-font-size: 14px;<br>
+                @input-font-size--mobil: 14px;<br>
+<br><br>
+                @input-focus-bg:#FFFFFF;<br>
+                @input-focus-border:@brand-primary;<br>
+                @input-focus-color:@brand-secondary;<br>
+                @input-error-bg:desaturate(lighten(@highlight-error, 38%), 20%);<br>
+                @input-error-border:@highlight-error;<br>
+                @input-error-color:@highlight-error;<br>
+                @input-success-bg:#FFFFFF;<br>
+                @input-success-border:@highlight-success;<br>
+                @input-success-color:@highlight-success;<br>
+                @input-placeholder-color: #bcbcbc;<br>
+                @tw-mobile-input-font-size: 14px;<br>
+<br><br>
+
+                @jos-button-outline-bg: #fff;<br>
+                @jos-button-outline-font: @brand-primary;<br>
+                @jos-button-ouline-border: @brand-primary;<br>
+<br><br>
+                @jos-button-ouline-hover-bg: @brand-primary;<br>
+                @jos-button-ouline-hover-font: #fff;<br>
+
+<br><br>
+
+                @panel-table-header-bg:@panel-bg;<br>
+                @panel-table-header-color:@text-color-dark;<br>
+                @table-row-bg:#FFFFFF;<br>
+                @table-row-color:@brand-secondary;<br>
+                @table-row-highlight-bg:darken(@table-row-bg, 4%);<br>
+                @table-header-bg:@brand-secondary;<br>
+                @table-header-color:#FFFFFF;<br>
+<br><br>
+                @badge-discount-bg:#df514d;<br>
+                @badge-discount-color:#FFFFFF;<br>
+                @badge-newcomer-bg: #fad232;<br>
+                @badge-newcomer-color:#FFFFFF;<br>
+                @badge-recommendation-bg:@highlight-success;<br>
+                @badge-recommendation-color:#FFFFFF;<br>
+                @badge-download-bg:@highlight-info;<br>
+                @badge-download-color:#FFFFFF;<br>
+<br><br>
+
+
+                @footer-bottom-bg: #222222;<br>
+                @footer-bottom-text: #ffffff;<br>
+                @footer-bottom-fontsize: 13px;<br>
+<br><br>
+                @jos-footer-title-size: 20px;<br>
+                @jos-footer-title-color: @brand-primary;<br>
+                @jos-footer-title-weight: 400;<br>
+                @jos-footer-icon-border: #ccc;<br>
+<br><br>
+                @jos-footer-headline-bordercolor: #ccc;<br>
+                @jos-topbar-bg: @titan-topbar-color;<br>
+<br><br>
+                @layout_produktdetails: 0;<br>
+                @produktdetails_zentriert: 0;<br>
+                @produktdetails_background_color: #ff0000;<br>
+                @artikel_headline_position: 0;<br>
+                @supplier_logo_width: 1;<br>
+                @tw-product-base-label-width: 1;<br>
+                @tw-product-base-label-content: 1;<br>
+                @artikel_show_artikelnummer: 1;<br>
+                @artikel_variantenauswahl_reset: 0;<br>
+                @share_buttons_compact: 0;<br>
+<br><br>
+                </span>
+
+            ]]>
+        </changes>
+    </changelog>
+</plugin>

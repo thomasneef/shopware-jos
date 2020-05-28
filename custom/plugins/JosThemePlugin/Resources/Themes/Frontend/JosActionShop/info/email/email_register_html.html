@@ -1,0 +1,351 @@
+<!--
+  ~  Copyright (C) Thomas Neef | neefit.de - All Rights Reserved
+  ~ @author  Thomas Neef
+  ~ @Modul  Projects
+  ~ @Class  email_register_html.html
+  ~ @date  27.05.20, 09:27
+  -->
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <!-- Define Charset -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+
+    <style type="text/css">
+
+
+        body{
+            width: 100%;
+            background-color: #fff;
+            margin:0;
+            padding:0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        p,h1,h2,h3,h4{
+            margin-top:0;
+            margin-bottom:0;
+            padding-top:0;
+            padding-bottom:0;
+        }
+
+        span.preheader{
+            display: none; font-size: 1px;}
+
+        html{
+            width: 100%;
+        }
+
+        table{
+            font-size: 14px;
+            border: 0;
+        }
+
+        td{
+            color: #212221;
+        }
+
+        td.main-header{
+            color: #5d6775;
+        }
+
+        /* ----------- responsivity ----------- */
+        @media only screen and (max-width: 640px){
+            /*------ top header ------ */
+            .header-bg{
+                width: 440px !important; height: auto !important;}
+            .rounded-edg-bg{
+                width: 420px !important; height: 5px !important;}
+            .main-header{
+                line-height: 28px !important;}
+            .main-subheader{
+                line-height: 28px !important;}
+
+            /*--------logo-----------*/
+            .logo{
+                width: 400px !important;}
+            /*----- main image -------*/
+            .main-image{
+                width: 400px !important; height: auto !important;}
+            .main-text-container{
+                width: 340px !important; height: auto !important;}
+
+            /*-------- container --------*/
+            .container600{
+                width: 440px !important;}
+            .container580{
+                width: 420px !important;}
+            .container560{
+                width: 400px !important;}
+            .container540{
+                width: 380px !important;}
+            .main-content{
+                width: 418px !important;}
+
+
+            /*-------- secions ----------*/
+
+            .section-item{
+                width: 380px !important;}
+            .section-img{
+                width: 380px !important; height: auto !important;}
+
+            .order--article-container{
+                width: 250px !important;float:none;margin: 0 auto;}
+            .article--content{
+                margin-left:30px;}
+
+            .order--article-title{
+                text-align: center;}
+
+        }
+
+        @media only screen and (max-width: 479px){
+
+
+            /*------ top header ------ */
+            .header-bg{
+                width: 280px !important; height: auto !important;}
+            .rounded-edg-bg{
+                width: 260px !important; height: 5px !important;}
+            .main-header{
+                font-size: 24px !important; line-height: 28px !important;}
+            .main-subheader{
+                line-height: 28px !important;}
+
+            /*--------logo-----------*/
+            .logo{
+                width: 240px !important;}
+            /*----- main image -------*/
+            .main-image{
+                width: 240px !important; height: auto !important;}
+            .main-text-container{
+                width: 180px !important;}
+
+            /*-------- container --------*/
+            .container600{
+                width: 280px !important;}
+            .container580{
+                width: 260px !important;}
+            .container560{
+                width: 240px !important;}
+            .container540{
+                width: 220px !important;}
+            .main-content{
+                width: 258px !important;}
+
+            /*-------- secions ----------*/
+            .section-item{
+                width: 220px !important;}
+            .section-img{
+                width: 220px !important; height: auto !important;}
+            .section-title{
+                line-height: 28px !important; font-size: 16px !important;}
+
+            .order--article-container{
+                width: 180px !important;float:none;margin: 0 auto;}
+            .article--content{
+                margin-left:0;}
+            .article--text-left{
+                width: 60px;}
+            .article--text-right{
+                width: 120px;}
+            .article--text-inner{
+                float:right;}
+
+            /*-------- footer ----------*/
+            .footer{
+                width: 280px !important;}
+        }
+
+    </style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#485361">
+
+    <tr><td height="20" bgcolor="#485361"></td></tr>
+
+    <tr>
+        <td align="center">
+            <table border="0" align="center" width="600" cellpadding="0" cellspacing="0" bgcolor="#fff" class="container600">
+                <tr>
+                    <td align="center" bgcolor="#212221">
+                        <table border="0" width="560" align="center" cellpadding="0" cellspacing="0" class="container560">
+                            <tr>
+                                <td>
+                                    <table border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#212221">
+                                        <tr><td height="20" bgcolor="#212221"></td></tr>
+                                        <tr>
+                                            <td align="center">
+                                                <a href="{sShopURL}" style="display: block; border-style: none !important; border: 0 !important;">
+                                                    <img editable="true" mc:edit="logo" height="40" width="inherit" border="0" style="display: block;" src="https://www.action-shop24.de/media/image/68/ba/20/logo-mobile.jpg" alt="logo" /></a>
+                                            </td>
+                                        </tr>
+                                        <tr><td height="15" bgcolor="#212221"></td></tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr><td height="10" bgcolor="#212221"></td></tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <table border="0" align="center" width="600" cellpadding="0" cellspacing="0" bgcolor="#fff" class="container600">
+
+                <tr><td height="30"></td></tr>
+
+                <tr>
+                    <td align="center">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table border="0" align="center" width="580" cellpadding="0" cellspacing="0" bgcolor="#fff" class="container580">
+
+                            <tr>
+                                <td>
+                                    <table border="0" align="center" width="578" cellpadding="0" cellspacing="0" bgcolor="#fff" class="main-content">
+
+
+                                        <layout label="main-section">
+                                            <tr>
+                                                <td>
+                                                    <table border="0" align="center" width="560" cellpadding="0" cellspacing="0" class="container560">
+
+                                                        <tr><td height="40"></td></tr>
+                                                        <tr>
+                                                            <td align="center" mc:edit="subtitle1" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif;" class="main-subheader">
+                                                                <multiline>
+                                                                    Hallo {$sUser.billing_firstname},
+                                                                </multiline>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td height="20">
+
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td align="center" mc:edit="subtitle1" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif;" class="main-subheader">
+                                                                <multiline>
+                                                                    Ihre Bestellung {$sOrder.ordernumber} vom {$sOrder.ordertime|date_format:"%d.%m.%Y"} ist auf dem Weg zu Ihnen!<br/><br/><br/>
+                                                                    <strong>
+                                                                        <br/><br/>
+                                                                        DHL-Trackingnummer zur Versandverfolgung: <strong><a href="https://www.dhl.de/de/privatkunden/pakete-empfangen/verfolgen.html?piececode={$sOrder.trackingcode}"> {$sOrder.trackingcode}</a></strong><br/>
+                                                                        <br/><br/>
+                                                                        Den aktuellen Status Ihrer Bestellung können Sie auch jederzeit auf unserer Webseite im  Bereich "Mein Konto" - "Meine Bestellungen" abrufen.<br/>
+                                                                        Sollten Sie allerdings den Kauf ohne Registrierung, also ohne Anlage eines Kundenkontos, gewählt haben, steht Ihnen diese Möglichkeit leider nicht zur Verfügung.
+                                                               </multiline>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr><td height="20"></td></tr>
+                                                        <tr>
+                                                            <td> <hr>  </td>
+                                                        </tr>
+                                                        <tr><td height="20"></td></tr>
+                                                        <tr>
+                                                            <td>
+                                                                <table border="0" align="center" width="540" cellpadding="0" cellspacing="0" class="container540">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table border="0" align="left" width="540" cellpadding="0" cellspacing="0" class="container540">
+                                                                                <tr>
+                                                                                    <td align="center" mc:edit="title6" style="color: #58656e; font-size: 15px; font-family: Helvetica, Arial, sans-serif;">
+                                                                                        <multiline>
+                                                                                            Für Rückfragen stehen wir Ihnen jederzeit gerne zur Verfügung. Sie erreichen uns wie folgt:
+                                                                                        </multiline>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr><td height="10"></td></tr>
+
+                                                                                <tr>
+                                                                                    <td align="center" mc:edit="subtitle4" style="color: #9ba4b0; font-size: 14px; font-family: Helvetica, Arial, sans-serif; line-height: 25px;">
+                                                                                        <multiline>
+                                                                                            {config name=address}
+                                                                                        </multiline>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table border="0" width="240" align="center" cellpadding="0" cellspacing="0" class="container">
+                                                        <tr><td height="40"></td></tr>
+                                                        <tr>
+                                                            <td align="center">
+                                                                <hr>
+                                                            </td>
+                                                        </tr>
+                                                        <tr><td height="40"></td></tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="center" mc:edit="subtitle1" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif;" class="main-subheader">
+                                                    <multiline>
+                                                        Mit freundlichen Grüßen,<br>Ihr Team von {config name=shopName}
+                                                    </multiline>
+                                                </td>
+                                            </tr>
+                                            <tr><td height="30"></td></tr>
+
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <table border="0" align="center" cellpadding="0" cellspacing="0">
+
+                            <tr><td height="30"></td></tr>
+                            <tr>
+                                <td>
+                                </td>
+
+                            </tr>
+                            <tr><td height="30"></td></tr>
+
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+
+    <tr><td height="40"></td></tr>
+
+</table>
+
+</body>
+</html>
