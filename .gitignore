@@ -1,0 +1,9 @@
+# Ignoring directories
+/engine/
+/themes/
+/vendor/
+
+# Ignore files
+.idea
+.gitignore
+
